@@ -129,43 +129,72 @@
             <img src="https://res.cloudinary.com/dqz7v5cyp/image/upload/c_crop,g_north_west,h_429,w_832,y_410/c745b021-5e95-4c4e-9b48-53ff87a23122_e12k3v.jpg" alt="F1 Racing" class="hero-image">
 
             <h2>Bienvenidos a la comunidad</h2>
-            <p>Este espacio está dedicado a seguir la trayectoria, éxitos del viejo sabroso en el automovilismo mundial. Aquí celebramos la pasión por el deporte y el apoyo incondicional a nuestro piloto favorito.</p>
+            <p>Este espacio está dedicado a seguir la trayectoria, éxitos del Checo
+             en el automovilismo mundial. Aquí celebramos la pasión por el deporte y el apoyo incondicional a nuestro piloto favorito.</p>
 
             <p>Mantente atento para próximas actualizaciones sobre carreras, estadísticas y noticias de la temporada 2026.</p>
         </div>
-<section class="expectations-section">
-    <div class="promo-banner">
-        <h2>Expectativas: El Asalto Final en Baréin</h2>
-        <p>La pretemporada entra en su fase crítica. Esto es lo que el #11 tiene que resolver antes del GP de Australia.</p>
+
+<div class="tabs-container" style="margin-top: 40px;">
+    <div class="tabs-header" style="display: flex; border-bottom: 2px solid #eee; margin-bottom: 25px;">
+        <button class="tab-link active" onclick="openTab(event, 'news')" style="background:none; border:none; padding:10px 20px; cursor:pointer; font-weight:bold; border-bottom:3px solid #007bff;">Noticias</button>
+        <button class="tab-link" onclick="openTab(event, 'expectations')" style="background:none; border:none; padding:10px 20px; cursor:pointer; font-weight:bold; color:#888;">Expectativas</button>
     </div>
 
-    <div class="expectations-grid">
-        <div class="exp-card">
-            <div class="icon">⚙️</div>
-            <h3>Domar al Cadillac</h3>
-            <p>Tras los sustos eléctricos de la semana pasada, el objetivo principal es rodar sin banderas rojas. Checo necesita sesiones limpias para entender la nueva unidad de potencia.</p>
+    <div id="news" class="tab-content news-section" style="display: block;">
+        <div class="news-card" style="border-left-color: #f39c12;">
+            <span class="news-date">📅 18 de Febrero, 2026</span>
+            <h3>Día de "Picar Piedra": Sensores y Realidad en el Box</h3>
+            <p>Día 1 de test finales en Baréin. Checo y Cadillac enfrentaron la realidad de un equipo novato: problemas de sensores que limitaron el rodaje a solo 24 vueltas. Tiempo: 1:38.191.</p>
+            <p><strong>Opinión:</strong> Lo valioso fue solucionar la fiabilidad básica en la tarde. ¡Construcción pura antes de Melbourne! 🇲🇽</p>
+            <span class="news-source">Vía: Reportes de pista Baréin.</span>
         </div>
 
-        <div class="exp-card">
-            <div class="icon">🔋</div>
-            <h3>El Factor Eléctrico</h3>
-            <p>Con las nuevas reglas, el 50% de la potencia es eléctrica. Veremos a Checo probando diferentes mapas de entrega de energía para evitar el "clipping" en las rectas de Sakhir.</p>
-        </div>
-
-        <div class="exp-card">
-            <div class="icon">⏱️</div>
-            <h3>¿Fuego Real?</h3>
-            <p>Se espera que en los últimos dos días, el equipo le permita a Checo montar el compuesto más blando para ver dónde está realmente el coche en comparación con Mercedes y Ferrari.</p>
+        <div class="news-card">
+            <span class="news-date">📅 14 de Febrero, 2026</span>
+            <h3>Barcelona: Primer contacto y adaptabilidad</h3>
+            <p>El auto se ve estable en las curvas lentas. Checo se enfocó en recolectar datos y el balance del eje trasero parece muy prometedor para las tandas largas.</p>
+            <span class="news-source">Análisis de pretemporada.</span>
         </div>
     </div>
 
-    <div class="fan-quote">
-        <blockquote>
-            "No se asusten por los tiempos del fondo de la tabla; Cadillac está escondiendo sus cartas. Lo importante es que el #11 ya se siente cómodo con el balance del eje trasero." 
-            <span>— Nota del Editor, Checoneta.com</span>
-        </blockquote>
+    <div id="expectations" class="tab-content news-section" style="display: none;">
+        <div class="news-card" style="border-left-color: #007bff;">
+            <span class="news-date">📅 Análisis Semana Final</span>
+            <h3>¿Qué esperamos de esta semana?</h3>
+            <p>Prioridad absoluta: Fiabilidad. Cadillac necesita sesiones limpias de más de 60 vueltas para entender el mapa de energía eléctrica antes de Australia.</p>
+        </div>
+
+        <div class="news-card">
+            <span class="news-date">📅 Previsión Técnica</span>
+            <h3>El Factor Eléctrico (Reglas 2026)</h3>
+            <p>El 50% de la potencia es eléctrica. Veremos a Checo probando la entrega de energía para evitar el "clipping" en las rectas largas de Sakhir.</p>
+        </div>
     </div>
-</section>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        // Ocultar todas las secciones news-section dentro de los tabs
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Quitar la clase active de los botones y resetear color
+        tablinks = document.getElementsByClassName("tab-link");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.borderBottom = "3px solid transparent";
+            tablinks[i].style.color = "#888";
+        }
+        // Mostrar la pestaña actual y marcar el botón
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.style.borderBottom = "3px solid #007bff";
+        evt.currentTarget.style.color = "#111";
+    }
+</script>
+
+
 
 <style>
     .expectations-section {
@@ -207,34 +236,7 @@
     .fan-quote span { display: block; margin-top: 10px; font-weight: bold; font-style: normal; color: #111; font-size: 0.8rem; }
 </style>
 
-        <section class="news-section">
-            <h2 style="border-bottom: 2px solid #111; padding-bottom: 10px; font-weight: 700;">Bitácora de Carrera 2026</h2>
-            <div class="news-card" style="border-left-color: #28a745;"> <span class="news-date">Resumen Estadístico: Pretemporada 2026</span>
-    <h3>El #11 en números: Fiabilidad y Resistencia</h3>
-    <p>Después de analizar los tiempos de sector, queda claro que la prioridad fue la consistencia. Aquí mi resumen de lo que nos dejaron estos test:</p>
-    <ul style="font-size: 0.95rem; color: #444; padding-left: 20px;">
-        <li><strong>Kilometraje total:</strong> Más de 1,200 km recorridos entre ambos circuitos sin fallas mecánicas graves.</li>
-        <li><strong>Simulacros de carrera:</strong> Checo mantuvo un ritmo constante en el rango de 1:36s en Baréin, mostrando una gestión de gomas envidiable.</li>
-        <li><strong>Fiabilidad:</strong> Fue uno de los pilotos con más vueltas completadas en el segundo día de Barcelona (85 vueltas).</li>
-    </ul>
-    <p>Mi conclusión: No buscamos la Pole en los test, pero tenemos un "tanque" listo para pelear podios desde la primera fecha. ¡La consistencia es la clave del éxito!</p>
-    <span class="news-source">Datos recopilados de tiempos oficiales y vueltas de telemetría pública.</span>
-</div>
-
-            <div class="news-card">
-                <span class="news-date">Pruebas Oficiales - Baréin</span>
-                <h3>Baréin: Sensaciones positivas bajo los reflectores</h3>
-                <p>¡Qué manera de cerrar los test! Lo que más me emociona como fan es ver la consistencia del #11 en las tandas largas. Aunque no buscó el tiempo de clasificación, el ritmo de carrera parece superior al del año pasado. Se nota que Checo está trabajando muy de cerca con sus ingenieros para domar el nuevo paquete aerodinámico. ¡Hay mucha esperanza para el inicio de temporada!</p>
-                <span class="news-source">Opinión basada en reportes de telemetría de pretemporada.</span>
-            </div>
-
-            <div class="news-card">
-                <span class="news-date">Shakedown - Barcelona</span>
-                <h3>Barcelona: Primer contacto y adaptabilidad</h3>
-                <p>En el Circuit de Barcelona-Catalunya vimos los primeros kilómetros reales. Mi lectura personal: el auto se ve "en rieles" en las curvas lentas. Checo se enfocó en recolectar datos y, a pesar de las condiciones cambiantes de la pista, sus comentarios sobre la estabilidad del eje trasero son música para mis oídos. Es solo el inicio, pero la Checoneta ya está en marcha.</p>
-                <span class="news-source">Vía: Análisis de comunidades F1 y Telegram.</span>
-            </div>
-        </section>
+     
 
         <div class="contact-box">
             <h3>¿Consultas sobre este dominio?</h3>
