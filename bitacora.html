@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Checoneta | Comunidad de Fans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #111;
+            --text-color: #333;
+            --bg-color: #ffffff;
+            --accent-color: #007bff;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+        }
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: -1px;
+            color: var(--primary-color);
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .contact-box {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        footer {
+            margin-top: 100px;
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+            font-size: 0.85rem;
+            color: #777;
+            text-align: justify;
+        }
+        .disclaimer-title {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .news-section {
+            margin: 40px 0;
+        }
+        .news-card {
+            border-left: 4px solid #007bff; /* Un azul profesional, no el de Red Bull */
+            padding: 20px;
+            margin-bottom: 25px;
+            background: #f9f9f9;
+            border-radius: 0 8px 8px 0;
+        }
+        .news-date {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #666;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        .news-card h3 {
+            margin: 10px 0;
+            color: #111;
+            font-size: 1.4rem;
+        }
+        .news-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #444;
+        }
+        .news-source {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.8rem;
+            font-style: italic;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BITACORA 2026</h1>
+        <p>El punto de encuentro de la afición de Sergio Pérez</p>
+    </header>
+
+
+    <div class="container">
+        <div class="content">
+            <img src="https://res.cloudinary.com/dqz7v5cyp/image/upload/c_crop,g_north_west,h_429,w_832,y_410/c745b021-5e95-4c4e-9b48-53ff87a23122_e12k3v.jpg" alt="F1 Racing" class="hero-image">
+
+            <h2>Bienvenidos a la comunidad</h2>
+            <p>Este espacio está dedicado a seguir la trayectoria, éxitos del Checo
+            en el automovilismo mundial. Aquí celebramos la pasión por el deporte y el apoyo incondicional a nuestro piloto favorito.</p>
+
+            <p>Mantente atento para próximas actualizaciones sobre carreras, estadísticas y noticias de la temporada 2026.</p>
+        </div>
+
+        <div class="tabs-container" style="margin-top: 40px;">
+            <div class="tabs-header" style="display: flex; border-bottom: 2px solid #eee; margin-bottom: 25px;">
+                <button class="tab-link active" onclick="openTab(event, 'news')" style="background:none; border:none; padding:10px 20px; cursor:pointer; font-weight:bold; border-bottom:3px solid #007bff;">Noticias</button>
+                <button class="tab-link" onclick="openTab(event, 'expectations')" style="background:none; border:none; padding:10px 20px; cursor:pointer; font-weight:bold; color:#888;">Expectativas</button>
+            </div>
+
+            <div id="news" class="tab-content news-section" style="display: block;">
+                <div class="news-card" style="border-left-color: #f39c12;">
+                    <span class="news-date">📅 18 de Febrero, 2026</span>
+                    <span class="news-date">Día 1 - Test Finales Baréin</span>
+                    <h3>Día de "Picar Piedra": Sensores y Realidad en el Box</h3>
+                    <p>Hoy en Baréin nos topamos con la realidad cruda de un equipo que empieza de cero. No fue un día de glamour, fue un día de garaje y paciencia para el #11.</p>
+
+                    <div style="background: #fff; padding: 10px; border-radius: 5px; margin: 10px 0; font-size: 0.9rem; border: 1px inset #eee;">
+                        <strong>Resumen Técnico:</strong>
+                        <ul style="margin: 5px 0;">
+                            <li><strong>Vueltas:</strong> 24 (Principalmente de instalación).</li>
+                            <li><strong>Mejor Tiempo:</strong> 1:38.191 (P19).</li>
+                            <li><strong>Incidencias:</strong> Problemas de sensores en la mañana que limitaron el rodaje.</li>
+                        </ul>
+                    </div>
+
+                    <p><strong>Mi lectura:</strong> Frustra verlo en el fondo de la tabla a 4 segundos del líder, pero lo más valioso fue la segunda mitad del día. El equipo solucionó los fallos básicos y Checo volvió a rodar sin dramas mayores. Como él mismo dice: disfruta el reto de estas reglas 2026. Su experiencia está afinando el Cadillac más que cualquier simulador. ¡Esto es construcción pura, no carrera!</p>
+
+                    <p style="font-weight: bold; color: #111;">Mañana Bottas abre la sesión y Checo retoma el mando por la tarde. ¡Vamos, que el baile real es en Melbourne! 🇲🇽🔧</p>
+                    <span class="news-source">Bitácora de seguimiento en vivo - Test Baréin 2026.</span>
+                </div>
+
+                <div class="news-card">
+                    <span class="news-date">📅 14 de Febrero, 2026</span>
+                    <h3>Barcelona: Primer contacto y adaptabilidad</h3>
+                    <p>El auto se ve estable en las curvas lentas. Checo se enfocó en recolectar datos y el balance del eje trasero parece muy prometedor para las tandas largas.</p>
+                    <span class="news-source">Análisis de pretemporada.</span>
+                </div>
+            </div>
+
+            <div id="expectations" class="tab-content news-section" style="display: none;">
+                <div class="news-card" style="border-left-color: #007bff;">
+                    <span class="news-date">📅 Análisis Semana Final</span>
+                    <h3>¿Qué esperamos de esta semana?</h3>
+                    <p>Prioridad absoluta: Fiabilidad. Cadillac necesita sesiones limpias de más de 60 vueltas para entender el mapa de energía eléctrica antes de Australia.</p>
+                </div>
+
+                <div class="news-card">
+                    <span class="news-date">📅 Previsión Técnica</span>
+                    <h3>El Factor Eléctrico (Reglas 2026)</h3>
+                    <p>El 50% de la potencia es eléctrica. Veremos a Checo probando la entrega de energía para evitar el "clipping" en las rectas largas de Sakhir.</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+        // Ocultar todas las secciones news-section dentro de los tabs
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+        // Quitar la clase active de los botones y resetear color
+                tablinks = document.getElementsByClassName("tab-link");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.borderBottom = "3px solid transparent";
+                    tablinks[i].style.color = "#888";
+                }
+        // Mostrar la pestaña actual y marcar el botón
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.style.borderBottom = "3px solid #007bff";
+                evt.currentTarget.style.color = "#111";
+            }
+        </script>
+
+
+
+        <style>
+            .expectations-section {
+                margin: 50px 0;
+                background: #fff;
+                border: 1px solid #eee;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+            .promo-banner {
+                background: linear-gradient(135deg, #111 0%, #333 100%);
+                color: white;
+                padding: 30px;
+                text-align: center;
+            }
+            .promo-banner h2 { margin: 0; font-size: 1.8rem; }
+            .expectations-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                padding: 30px;
+            }
+            .exp-card {
+                text-align: center;
+                padding: 20px;
+                border: 1px solid #f0f0f0;
+                border-radius: 8px;
+            }
+            .exp-card .icon { font-size: 2rem; margin-bottom: 10px; }
+            .exp-card h3 { font-size: 1.1rem; margin-bottom: 10px; color: #007bff; }
+            .exp-card p { font-size: 0.9rem; color: #555; }
+            .fan-quote {
+                background: #fcfcfc;
+                padding: 20px 40px;
+                border-top: 1px solid #eee;
+                font-style: italic;
+            }
+            .fan-quote blockquote { margin: 0; color: #444; }
+            .fan-quote span { display: block; margin-top: 10px; font-weight: bold; font-style: normal; color: #111; font-size: 0.8rem; }
+        </style>
+
+
+
+        <div class="contact-box">
+            <h3>¿Consultas sobre este dominio?</h3>
+            <p>Para propuestas comerciales o contacto administrativo relacionado con Checoneta.com, por favor visita nuestro listado oficial.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container" style="margin: 0 auto;">
+            <span class="disclaimer-title">AVISO LEGAL Y DESCARGO DE RESPONSABILIDAD:</span>
+            Este sitio web (Checoneta.com) es una plataforma independiente creada por y para aficionados al automovilismo. No está afiliado, asociado, autorizado, respaldado ni conectado oficialmente de ninguna manera con Sergio "Checo" Pérez, Red Bull Racing, Cadillac Racing, Mercado Libre, ni con ninguna de sus subsidiarias o afiliadas. 
+            <br><br>
+            El uso del término "Checoneta" se realiza con fines informativos, culturales y de entretenimiento bajo el principio de "Uso Justo" (Fair Use) para comunidades de fans. Todas las marcas comerciales, logotipos y nombres registrados que aparecen o se mencionan en este sitio son propiedad exclusiva de sus respectivos dueños.
+        </div>
+    </footer>
+
+</body>
+</html>
